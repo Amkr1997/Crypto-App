@@ -1,0 +1,24 @@
+.table-body {
+  background-color: #fff;
+  color: #333;
+}
+
+.table-data {
+  text-align: center;
+  padding: 1.2rem 2.4rem;
+}
+
+.table-data-clickable {
+  text-align: center;
+  padding: 1.6rem 2.8rem;
+
+  transition: all 0.3s;
+}
+
+.table-data-clickable:hover {
+  cursor: pointer;
+  background-color: #1c7ed6;
+  color: #fff;
+  border-radius: 1rem;
+}
+/*<TableComponent curElem={elem} key={elem.id} />*/

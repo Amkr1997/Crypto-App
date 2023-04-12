@@ -1,0 +1,148 @@
+/*
+.heading-secondary {
+  font-size: 3.6rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.news-section {
+  padding: 4.8rem 0 2.4rem 0;
+  margin: 0 9.6rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+*/
+
+.heading-news {
+  margin-bottom: 4.8rem;
+}
+
+.cards {
+}
+
+.card {
+  max-width: 30rem;
+  background-color: #fff;
+  border: 0.1rem solid #9bc3e6;
+  padding: 1rem;
+  border-radius: 1.2rem;
+}
+
+.card-img-pic {
+  width: 100%;
+  border-radius: 0.12rem;
+  height: 20rem;
+  object-fit: cover;
+  margin-bottom: 1.6rem;
+}
+
+.card-details {
+  padding: 1.6rem 0.8rem 0.8rem 0.8rem;
+}
+
+.tag {
+  padding: 0.4rem 0.8rem;
+  border: 0.1rem solid #dce8f0;
+
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 1.6rem;
+}
+
+.card-details p {
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: #555;
+}
+
+.read-more {
+  border: none;
+  padding: 1.2rem 2.4rem;
+  border-radius: 5rem;
+
+  background-color: #1c7ed6;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+
+  transition: all 0.3s;
+}
+
+.read-more:hover {
+  background-color: #1864ab;
+}
+
+.read-more a:link,
+.read-more a:visited {
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Below 1000px */
+
+@media (max-width: 62.5rem) {
+  .card {
+    max-width: 34rem;
+  }
+}
+
+@media (max-width: 44rem) {
+  .card {
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+
+  .card-img-pic {
+    height: 10rem;
+    width: 23rem;
+  }
+
+  .card-details {
+    padding: 1.2rem 0.4rem 0.4rem 0.4rem;
+  }
+
+  .tag {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .title {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .card-details p {
+    font-size: 1rem;
+    line-height: 150%;
+  }
+
+  .read-more {
+    padding: 0.8rem 1.8rem;
+    border-radius: 3rem;
+  }
+}
+
+/* Below 595px */
+
+@media (max-width: 37rem) {
+  .news-section {
+    padding-top: 2.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+    margin-bottom: 2.4rem;
+  }
+}

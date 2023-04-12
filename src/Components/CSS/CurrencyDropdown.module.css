@@ -1,0 +1,9 @@
+.selection {
+  padding: 0.8rem;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1864ab;
+  text-align: center;
+}

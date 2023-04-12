@@ -1,0 +1,27 @@
+footer {
+  margin-top: 3rem;
+  padding: 8.4rem 0 7.8rem 0;
+  text-align: center;
+  background-color: #ebe4e4;
+}
+
+footer p {
+  font-size: 2.4rem;
+  margin-top: 3rem;
+}
+
+.logo {
+  /*height: 2.4rem;*/
+  display: inline-block;
+  text-decoration: none;
+  font-size: 3rem;
+  letter-spacing: -0.2rem;
+  color: #1864ab;
+  font-weight: 600;
+
+  transition: all 0.3s;
+}
+
+.logo-footer {
+  font-size: 4.2rem;
+}

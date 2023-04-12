@@ -1,0 +1,167 @@
+.crypto-table {
+  padding: 0 3.6rem 0 3.6rem;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.drop-downs {
+  padding: 4.8rem 0 2.4rem 0;
+  margin: 0 9.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table-head {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+table {
+  font-size: 2.4rem;
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 2.4rem 3.6rem;
+  margin: 0 auto;
+}
+
+.table-head {
+  background-color: #1864ab;
+  color: #fff;
+}
+
+.table-body {
+  background-color: #fff;
+  color: #333;
+}
+
+.table-row {
+  text-align: center;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+
+  transition: all 0.3s;
+}
+
+.table-data {
+  text-align: center;
+  padding: 1.2rem 2.4rem;
+}
+
+.table-data-clickable {
+  text-align: center;
+  padding: 1.6rem 2.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3.6rem;
+
+  transition: all 0.3s;
+}
+
+.table-data-clickable img {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+.crypto-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.symbol {
+  text-decoration: none;
+  color: #222;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.title {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.table-data-clickable:hover {
+  cursor: pointer;
+  background-color: #99c5ec;
+  color: #222;
+  border-radius: 1rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 4.8rem;
+  margin-top: 6rem;
+  padding: 1rem;
+}
+
+.pagination span {
+  padding: 2rem;
+  border: 0.1rem solid #222;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: 2.4rem;
+}
+
+.arrows {
+  color: #1864ab;
+}
+
+.disabled {
+  opacity: 0;
+}
+
+.page-btns {
+  background-color: #99c5ec;
+}
+
+.profit {
+  font-weight: bolder;
+  color: #37b24d;
+}
+
+.loss {
+  font-weight: bolder;
+  color: #c92a2a;
+}
+
+/* Below 595px (LandScape Tablets) */
+
+@media (max-width: 37rem) {
+  .crypto-table {
+    padding: 0 2.4rem 0 2.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .drop-downs {
+    padding: 4rem 0 1.6rem 0;
+    margin: 0 1.4rem;
+  }
+
+  .pagination span {
+    padding: 1rem;
+    border: 0.1rem solid #222;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+}
