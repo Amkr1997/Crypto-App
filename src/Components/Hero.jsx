@@ -35,9 +35,9 @@ const Hero = ({ coins, setCoins }) => {
               }}
             />
             </div> */}
-          <div>
-            <Carousel />
-          </div>
+          <Carousel />
+          {/*<div>
+          </div>*/}
         </div>
       </section>
     </Fragment>

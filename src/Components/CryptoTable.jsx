@@ -1,12 +1,13 @@
 import React, { Fragment, useState } from "react";
 //import PriceDropdown from "./PriceDropdown";
-import CurrencyDropdown from "./CurrencyDropdown";
+//import CurrencyDropdown from "./CurrencyDropdown";
 import classes from "../Components/CSS/CryptoTable.module.css";
 import { useContext } from "react";
 import CryptoContext from "../Context/CryptoContext";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import FormatPrice from "./FormatPrice";
 import { NavLink } from "react-router-dom";
+import Loader from "./Loader";
 
 const CryptoTable = ({ coins, pageLength }) => {
   const cryptoCtx = useContext(CryptoContext);
@@ -16,12 +17,6 @@ const CryptoTable = ({ coins, pageLength }) => {
   // console.log(cryptoCtx);
 
   const [page, setPage] = useState(1);
-
-  /*
-  if (isLoading) {
-    return <p>...Loading...</p>;
-  }
-  */
 
   const { data } = cryptoData;
   //console.log(data);
@@ -46,10 +41,21 @@ const CryptoTable = ({ coins, pageLength }) => {
     );
   };
 
+  //const searched = (searchedCoins()?.length / 10).toFixed(0);
+  //console.log(searched);
+
   /*
   const [paginatedData] = searchedCoins();
   console.log(paginatedData);
 */
+
+  if (isLoading) {
+    return (
+      <Fragment>
+        <Loader />
+      </Fragment>
+    );
+  }
 
   return (
     <Fragment>
@@ -75,6 +81,7 @@ const CryptoTable = ({ coins, pageLength }) => {
                 ?.slice(page * pageLength - pageLength, page * pageLength)
                 .map((elem, index) => {
                   const profit = elem.market_cap_change_percentage_24h > 0;
+                  //console.log(searchedCoins);
                   return (
                     <tr>
                       <th>

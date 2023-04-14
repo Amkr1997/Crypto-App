@@ -11,7 +11,7 @@ const Carousel = () => {
   const fetchTrendingCoins = async () => {
     const { data } = await axios.get(TrendingCoins("inr"));
     setTrending(data);
-    console.log(data);
+    // console.log(data);
   };
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Carousel = () => {
   }, []);
 
   const items = trending?.map((coin) => {
-    let profit = coin?.price_change_percentage_24h >= 0;
+    // let profit = coin?.price_change_percentage_24h >= 0;
 
     return (
       <div className={classes["carousel-items"]}>
