@@ -1,13 +1,14 @@
 import React, { Fragment } from "react";
 import classes from "./CSS/Hero.module.css";
-import { BiSearch } from "react-icons/bi";
+//import { BiSearch } from "react-icons/bi";
+import Carousel from "./Carousel";
 
 const Hero = ({ coins, setCoins }) => {
-  const inputHandler = (e) => {
+  /* const inputHandler = (e) => {
     setCoins(e.target.value);
     //setPageLength(coins);
     //setHidePagination(false);
-  };
+  };*/
 
   return (
     <Fragment>
@@ -19,7 +20,7 @@ const Hero = ({ coins, setCoins }) => {
               Data provided of the past 24 hours of the market
             </p>
           </div>
-          <div className={classes["hero-search-box"]}>
+          {/* <div className={classes["hero-search-box"]}>
             <BiSearch
               className={classes["search-icon"]}
               name="search-outline"
@@ -33,6 +34,9 @@ const Hero = ({ coins, setCoins }) => {
                 inputHandler(e);
               }}
             />
+            </div> */}
+          <div>
+            <Carousel />
           </div>
         </div>
       </section>
