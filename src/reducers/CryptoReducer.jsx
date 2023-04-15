@@ -8,9 +8,9 @@ const CryptoReducer = (cryptoState, action) => {
 
   if (action.type === "SET_DATA") {
     return {
-      isLoading: false,
       ...cryptoState,
       cryptoData: action.payload,
+      isLoading: false,
       isError: false,
     };
   }
