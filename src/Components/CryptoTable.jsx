@@ -13,13 +13,13 @@ const CryptoTable = ({ coins, pageLength }) => {
   const cryptoCtx = useContext(CryptoContext);
   const { isLoading, cryptoData } = cryptoCtx;
 
-  // console.log(cryptoData);
+  console.log(cryptoData);
   // console.log(cryptoCtx);
 
   const [page, setPage] = useState(1);
 
   const { data } = cryptoData;
-  //console.log(data);
+  console.log(data);
 
   const nextPage = () => {
     if (page < data.length / pageLength) {
